@@ -85,7 +85,7 @@ $(document).ready(function ($) {
 						{
 							number: num,
 							numberStep: comma_separator_number_step
-						}, 7000
+						}, 1500
 					);
 				});
 
@@ -186,3 +186,10 @@ $(document).ready(function ($) {
 
 });
 
+
+$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
+});
