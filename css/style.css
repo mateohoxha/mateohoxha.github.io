@@ -8253,11 +8253,11 @@ textarea.form-control {
 
 .block-3 .text {
   width: 100%;
-  padding: 10% 7%; }
+  padding: 8% 0; }
   @media (min-width: 768px) {
     .block-3 .text {
-      width: 60%;
-      padding: 10% 7%; } }
+      width: 100%;
+      padding: 8% 0; } }
 
 .block-3 .text .subheading {
   font-size: 13px;
