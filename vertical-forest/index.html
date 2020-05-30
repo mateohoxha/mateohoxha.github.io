@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+  <title>Vertical Forest</title>
+</head>
+
+<body>
+  <section id="wallpaper">
+    <div class="buthead">
+      <button class="bMap" type="button" name="button">MAP</button>
+      <button class="bForest" type="button" name="button">YOUR FOREST</button>
+    </div>
+    <div class="heading">
+      <img src="images/head.png" alt="head title" class="img-fluid">
+    </div>
+    <div class="arrowd">
+      <a href="#wallpaper2">
+        <img src="images/icon.png" alt="">
+      </a>
+    </div>
+  </section>
+  <section id="wallpaper2">
+    <div class="Stefano">
+      <p>Designed by architect Stefano Boeri,
+        <br>Vertical Forest graces the skyline of the famed
+        <br> Nene Tereza Square.</p>
+      <div class="rdm">
+        <a href="#wallpaper3">
+          <span>Read More</span>
+          <img src="images/icon1.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="wallpaper3">
+    <div class="features">
+      <h2>features
+        <br> and amenities</h2>
+    </div>
+  </section>
+  <section id="wallpaper4">
+    <div class="whats">
+      <div class="next">
+        <h2>What's
+          <br>
+          <h4>next?</h4>
+        </h2>
+      </div>
+      <div class="gener">
+        <p>Per Gener 2, ky nuk eshte asgje tjeter vec projekti i rradhes.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BackToTop Button -->
+  <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top
+    <span></span>
+  </a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#scroll').fadeIn();
+        } else {
+          $('#scroll').fadeOut();
+        }
+      });
+      $('#scroll').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 0);
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
