@@ -46,23 +46,6 @@ $(window).scroll(function () {
 });
 
 
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('#scroll').fadeIn();
-    } else {
-      $('#scroll').fadeOut();
-    }
-  });
-  $('#scroll').click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 0);
-    return false;
-  });
-});
-
-
-
 // Google Map
 function initMap() {
   var location = { lat: 43.643160, lng: -79.376260 };
@@ -106,4 +89,29 @@ $('.owl-carousel').owlCarousel({
 // Gallery pop-up
 $(function () {
   var $gallery = $('#gallery a').simpleLightbox();
+});
+
+
+// modal popup
+setTimeout(function () {
+  $('#exampleModal').modal('show');
+}, 5000);
+
+
+
+
+
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#scroll').fadeIn();
+    } else {
+      $('#scroll').fadeOut();
+    }
+  });
+  $('#scroll').click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 0);
+    return false;
+  });
 });
