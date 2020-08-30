@@ -95,7 +95,7 @@ $(function () {
 // modal popup
 setTimeout(function () {
   $('#exampleModal').modal('show');
-}, 5000);
+}, 6000);
 
 
 
@@ -115,3 +115,42 @@ $(document).ready(function () {
     return false;
   });
 });
+
+
+var body = document.getElementById('body');
+var overlay = document.getElementById('overlay');
+var h1 = document.getElementById('h1');
+var heading = document.querySelector('.heading');
+var heroOverlay = document.getElementById('hero-overlay');
+var indicators = document.querySelector('.indicators');
+var arrow = document.querySelector('.arrowd');
+var links = document.querySelector('.buthead-links');
+
+var tl = new TimelineMax();
+
+
+
+
+
+
+var mq = window.matchMedia( "(max-width: 768px)" );
+if (mq.matches) {
+  tl.fromTo(h1, 1, { marginTop: '100px', opacity: '0' }, { marginTop: '0', opacity: '1', ease: Power2.easeInOut })
+  .fromTo(overlay, 1, { opacity: '1', zIndex: '100' }, { opacity: '0', zIndex: '-1', ease: Power2.easeInOut })
+  .fromTo(body, 1, { overflow: 'hidden' }, { overflow: 'auto' }, "-=1")
+  .fromTo(heading, 1, { marginTop: '50px', opacity: '0' } , { marginTop: '0', opacity: '1', ease: Power2.easeInOut })
+  .fromTo(heroOverlay, 1, { width: '0' }, { width: '50%', eaes: Power2.easeInOut })
+  .fromTo(indicators, 1, { opacity: '0', right: '-84px' }, { opacity: '1', right: '20px', ease: Power2.easeInOut })
+  .fromTo(arrow, 1, { opacity: '0', bottom: '0' }, { opacity: '1', bottom: '80', ease: Power2.easeInOut }, "-=1")
+  .fromTo(links, 1, { opacity: '0', padding: '60px 0' }, { opacity: '1', padding: '50px 0 100px 0', ease: Power2.easeInOut }, "-=1")
+}
+else {
+  tl.fromTo(h1, 1, { marginTop: '100px', opacity: '0' }, { marginTop: '0', opacity: '1', ease: Power2.easeInOut })
+  .fromTo(overlay, 1, { opacity: '1', zIndex: '100' }, { opacity: '0', zIndex: '-1', ease: Power2.easeInOut })
+  .fromTo(body, 1, { overflow: 'hidden' }, { overflow: 'auto' }, "-=1")
+  .fromTo(heading, 1, { marginTop: '50px', opacity: '0' } , { marginTop: '0', opacity: '1', ease: Power2.easeInOut })
+  .fromTo(heroOverlay, 1, { width: '0' }, { width: '50%', eaes: Power2.easeInOut })
+  .fromTo(indicators, 1, { opacity: '0', right: '-84px' }, { opacity: '1', right: '84px', ease: Power2.easeInOut })
+  .fromTo(arrow, 1, { opacity: '0', bottom: '0' }, { opacity: '1', bottom: '80', ease: Power2.easeInOut }, "-=1")
+  .fromTo(links, 1, { opacity: '0', padding: '60px 0' }, { opacity: '1', padding: '60px 120px', ease: Power2.easeInOut }, "-=1")
+}

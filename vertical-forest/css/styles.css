@@ -27,15 +27,18 @@ html {
 
 .heading {
   text-align: center;
+  margin-top: 50px;
+  opacity: 0;
 }
 
 .buthead-links {
-  padding: 60px 120px;
+  padding: 60px 0;
+  opacity: 0;
 }
 
 .buthead-links a {
   text-decoration: none !important;
-  color: #273746;
+  color: #fff;
   font-family: Contax-Sans-W0155-Regular, sans-serif;
   font-size: 18px;
   margin-right: 20px;
@@ -47,12 +50,16 @@ html {
 }
 
 #home {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 100vh;
   background-image: url('../images/2.png');
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 50px;
+  z-index: 99 !important;
 }
 
 #info {
@@ -73,10 +80,10 @@ html {
 }
 
 .arrowd {
-  display: inline-block;
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 0;
+  opacity: 0;
   transform: translateX(-50%);
 }
 
@@ -370,10 +377,9 @@ html {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #273746;
+  background-color: #fff;
   transition: all 250ms ease-in-out;
   transform: rotate(0deg);
-  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 .menu-icon span:nth-child(1) {
@@ -393,10 +399,11 @@ html {
 
 .indicators {
   position: fixed;
-  right: 84px;
+  right: -84px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1111;
+  opacity: 0;
 }
 .indicators .dot {
   width: 14px;
@@ -595,4 +602,37 @@ html {
 
 #scroll:hover span {
     border-bottom-color: #186A3B;
+}
+
+
+#overlay {
+  position: relative;
+  background-color: #273746;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 100;
+  opacity: 1;
+}
+
+#overlay h1 {
+  margin-top: 100px;
+  opacity: 0;
+}
+
+#hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 50%;
+  background-color: #273746;
+  z-index: -1;
+}
+
+#body {
+  overflow: hidden;
 }
