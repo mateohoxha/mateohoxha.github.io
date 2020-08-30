@@ -629,7 +629,7 @@ html {
   left: 0;
   height: 100vh;
   width: 50%;
-  background-color: #273746;
+  background-color: rgba(39, 55, 70, 0.7);
   z-index: -1;
 }
 
