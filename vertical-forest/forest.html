@@ -14,6 +14,7 @@
   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
       <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -25,20 +26,20 @@
     <title>Your Forest</title>
   </head>
 
-  <body>
+  <body style="overflow-x: hidden;">
       <div id="div1F"> 
-        <div class="buthead-links">
+        <div class="buthead-links py-5">
           <a href="index.html">HOME</a> 
           <a href="map.html">MAP</a> 
           <a href="forest.html">YOUR FOREST</a>
           <a href="blog.html">BLOG</a>
         </div>
-          <div class="UrForest"><h1 class="forestH1">YOUR FOREST</h1></div> 
+          <div class="UrForest"><h1 class="forestH1  animated fadeInUp">YOUR FOREST</h1></div> 
       </div>
       
       <div class="container py-5 my-5">
         <div class="row">
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-lg-4 mb-5 mb-lg-0 wow fadeInLeft">
             <h2 style="font-size: 27px; font-weight: bold;">Lorem Ipsum is simply dummy text</h2>
             <p style="font-size: 16px;">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>
                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -58,14 +59,14 @@
               <p style="font-size: 16px;">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
             <div class="call">
-             <img src="images/fRoad.jpg" class="img-fluid" alt="">
+             <img src="images/fRoad.jpg" class="img-fluid wow fadeInRight" alt="">
             </div>
           </div>
         </div>
         </div>
 
 
-        <footer id="footer">
+        <footer id="footer-section">
             <div class="footInfo ml-auto">
               <h6 style="color: #ECF0F1;font-family: 'Roboto', sans-serif;" class="mb-3">CLIENTS</h6>
               <h6>
@@ -90,6 +91,8 @@
           <script src="js/owl.carousel.min.js"></script>
           <script src="js/simple-lightbox.js"></script>
           <script src="js/index.js"></script>
-
-
+          <script src="js/wow.min.js"></script>
+          <script>
+            new WOW().init();
+          </script>
   </body>
