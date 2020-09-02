@@ -209,7 +209,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 50%;
     background-color: rgba(39, 55, 70, 0.7);
     }
