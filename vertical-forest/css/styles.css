@@ -61,44 +61,7 @@ color: #273746 !important;
 background-color: transparent !important;
 border: 1px solid #273746 !important;
 }
-  
-  
-#scroll {
-position:fixed;
-right:30px;
-bottom:30px;
-cursor:pointer;
-width:50px;
-height:50px;
-background-color:#ECF0F1;
-text-indent:-9999px;
-display:none;
--webkit-border-radius:5px;
--moz-border-radius:5px;
-border-radius:5px;
-transition: all .2s ease-in-out;
-}
-#scroll span {
-position:absolute;
-top:50%;
-left:50%;
-margin-left:-8px;
-margin-top:-12px;
-height:0;
-width:0;
-border:8px solid transparent;
-border-bottom-color:#273746
-}
-#scroll:hover {
-background-color:#B2BABB;
-opacity:1;
-filter:"alpha(opacity=100)";
--ms-filter:"alpha(opacity=100)";
-}
 
-#scroll:hover span {
-    border-bottom-color: #186A3B;
-}
   
   
 #overlay {
@@ -726,4 +689,23 @@ color: #fff !important;
 .animated-section-3.active > .fp-tableCell .whats {
 	-webkit-transition-delay: .33s;
 	        transition-delay: .33s;
+}
+
+
+
+
+
+.cookie-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #273746;
+    z-index: 99999999 !important;
+}
+
+.cookie-box p {
+    margin-bottom: 0 !important;
+    color: #fff;
 }
